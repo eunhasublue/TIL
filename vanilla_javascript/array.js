@@ -11,3 +11,16 @@ object.push({ name: "멍뭉이" });
 
 //배열의 크기
 console.log(object.length);
+
+//함수를 호출하게 될 때, 원래 넣어야할 파라미터를 넣지 않게 됬을 때, 기본값으로 사용할 값을 지정하는 것을 의미한다.
+function calculateCircleArea(r) {
+  const radius = r || 1; // r이 주어지지 않을 경우, 그 값은 1로 대체하여 계산
+  return Math.PI * radius * radius;
+}
+const area = calculateCircleArea(4);
+console.log(area);
+
+function calculateCircleArea(r = 1) {
+  // r이 주어지지 않을 경우, 그 값은 1로 대체하여 계산
+  return Math.PI * r * requestIdleCallback;
+}
