@@ -20,7 +20,15 @@ function calculateCircleArea(r) {
 const area = calculateCircleArea(4);
 console.log(area);
 
-function calculateCircleArea(r = 1) {
-  // r이 주어지지 않을 경우, 그 값은 1로 대체하여 계산
-  return Math.PI * r * requestIdleCallback;
-}
+function calculateCircleArea(r = 1) { // r이 주어지지 않을 경우, 그 값은 1로 대체하여 계산
+    return Math.PI * r * requestIdleCallback;
+  }
+
+  const calculateCircleArea = (r = 1) => { //화살표 함수로도 사용가능
+    return Math.PI * r * requestIdleCallback;
+  } 
+
+  const calculateCircleArea = (r = 1) => Math.PI * r * requestIdleCallback;
+
+    
+
