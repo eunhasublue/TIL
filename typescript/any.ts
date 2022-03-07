@@ -8,5 +8,7 @@ const any1 = returnAny("리턴은 아무거나");
 
 any1.toString();
 
+
+// 이런식으로 선언을 해도 any는 error가 나지 않는다.
 let looselyTyped: any = {};
 const d = looselyTyped.a.b;

@@ -7,5 +7,6 @@ let u: undefined = undefined;
 // void에는 undefined만 넣을 수 있다.
 let v: void = undefined;
 
+// 하지만, null과 다른 타입을 넣고 싶으면 유니온 티압을 쓰면된다.
 let union: string | null = null;
 union = "Mark";
